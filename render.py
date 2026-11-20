@@ -144,7 +144,7 @@ def draw_ticker(d):
         x = M + i * cw
         d.text((x + 4, y0), num, font=f_num, fill=NAVY)
         for j, ln in enumerate(wrap(lab, f_lab, cw - 10)):
-            d.text((x + 4, y0 + 28 + j * 10), ln, font=f_lab, fill=GREY)
+            d.text((x + 4, y0 + 25 + j * 10), ln, font=f_lab, fill=GREY)
         if i:
             d.line([(x, y0 + 2), (x, y1 - 4)], fill=RULE, width=1)
     rule(d, M, y1, W - 2 * M, width=2)
